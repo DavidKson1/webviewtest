@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="4ID-ah-zdk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.15353125333786011" green="0.17600667476654053" blue="0.21176803112030029" alpha="0.87823737157534243" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="TMb-BV-UUo"/>
                     </view>
                     <connections>
@@ -36,7 +36,19 @@
                     <view key="view" contentMode="scaleToFill" id="08b-rT-ZvD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0zz-5N-KMr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15353125333786011" green="0.17600667476654053" blue="0.21176803112030029" alpha="0.88342786815068497" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="0zz-5N-KMr" firstAttribute="top" secondItem="08b-rT-ZvD" secondAttribute="top" id="GsF-4f-wD7"/>
+                            <constraint firstItem="e0k-cT-4Gw" firstAttribute="trailing" secondItem="0zz-5N-KMr" secondAttribute="trailing" id="U78-ar-OD9"/>
+                            <constraint firstItem="e0k-cT-4Gw" firstAttribute="bottom" secondItem="0zz-5N-KMr" secondAttribute="bottom" id="agw-Ir-pSy"/>
+                            <constraint firstItem="0zz-5N-KMr" firstAttribute="leading" secondItem="e0k-cT-4Gw" secondAttribute="leading" id="fda-e4-FGO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="e0k-cT-4Gw"/>
                     </view>
                 </viewController>
@@ -75,6 +87,9 @@
                                                 <state key="normal" title="Live">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="testing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4P0-TL-Jsc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -106,10 +121,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7N8-Zc-CJ9">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKq-XD-29a">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hemsida app" translatesAutoresizingMaskIntoConstraints="NO" id="aKq-XD-29a">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="165"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IzP-j4-9kc">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JOBBBA" translatesAutoresizingMaskIntoConstraints="NO" id="IzP-j4-9kc">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="165"/>
                                             </imageView>
                                         </subviews>
@@ -117,10 +132,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-Gc-NNr">
                                         <rect key="frame" x="0.0" y="165" width="375" height="165"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-2N-mih">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Davidkontakta" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-2N-mih">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="165"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUL-Ww-u1d">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JOBBBA" translatesAutoresizingMaskIntoConstraints="NO" id="eUL-Ww-u1d">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="165"/>
                                             </imageView>
                                         </subviews>
@@ -148,6 +163,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ySR-Tr-io8"/>
                     <connections>
+                        <outlet property="contactImage" destination="gBg-2N-mih" id="lLL-fU-Mop"/>
                         <outlet property="menuBtn" destination="s5p-Ku-OVq" id="4nl-oi-CnX"/>
                         <outlet property="webViewImage" destination="aKq-XD-29a" id="lzX-kR-2DH"/>
                         <segue destination="EXV-i0-aVe" kind="show" identifier="dataDavid" id="nyg-hQ-RPP"/>
@@ -168,15 +184,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-ey-Yem">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgP-5c-Wnt">
-                                        <rect key="frame" x="8" y="38" width="30" height="30"/>
-                                        <state key="normal" image="hamburgerIcon">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6K-kS-Ap9">
-                                        <rect key="frame" x="323" y="38" width="44" height="30"/>
-                                        <state key="normal" title="HOME">
+                                        <rect key="frame" x="8" y="38" width="40" height="30"/>
+                                        <state key="normal" title="BACK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -186,11 +196,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.14862936739999999" green="0.17452016470000001" blue="0.2137337923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="CgP-5c-Wnt" firstAttribute="leading" secondItem="UYk-ey-Yem" secondAttribute="leading" constant="8" id="0bE-Xl-oe8"/>
-                                    <constraint firstAttribute="trailing" secondItem="K6K-kS-Ap9" secondAttribute="trailing" constant="8" id="8vw-GR-lmS"/>
-                                    <constraint firstAttribute="bottom" secondItem="CgP-5c-Wnt" secondAttribute="bottom" constant="12" id="FyP-gK-UX7"/>
+                                    <constraint firstAttribute="bottom" secondItem="K6K-kS-Ap9" secondAttribute="bottom" constant="12" id="E8q-tP-Laa"/>
+                                    <constraint firstItem="K6K-kS-Ap9" firstAttribute="leading" secondItem="UYk-ey-Yem" secondAttribute="leading" constant="8" id="nV8-Xt-lhP"/>
                                     <constraint firstAttribute="height" constant="80" id="uYf-40-AVY"/>
-                                    <constraint firstAttribute="bottom" secondItem="K6K-kS-Ap9" secondAttribute="bottom" constant="12" id="yWd-pJ-cS6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qF-RZ-otQ">
@@ -244,6 +252,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Davidkontakta" width="2048" height="1290"/>
+        <image name="Hemsida app" width="691" height="579"/>
+        <image name="JOBBBA" width="700" height="308"/>
         <image name="hamburgerIcon" width="30" height="30"/>
         <image name="logoDD" width="900" height="600"/>
     </resources>
