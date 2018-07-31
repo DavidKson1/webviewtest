@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         webViewImage.addGestureRecognizer(tapGesture)
         webViewImage.isUserInteractionEnabled = true
       
-    }
+    } //
 
     @objc func imageTapped(gesture: UIGestureRecognizer) {
         if (gesture.view as? UIImageView) != nil {
