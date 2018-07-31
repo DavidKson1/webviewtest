@@ -12,6 +12,7 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var webViewImage: UIImageView!
+    @IBOutlet weak var menuBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,12 @@ class ViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped(gesture:)))
         webViewImage.addGestureRecognizer(tapGesture)
         webViewImage.isUserInteractionEnabled = true
+        
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
       
-    } //
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+    }
 
     @objc func imageTapped(gesture: UIGestureRecognizer) {
         if (gesture.view as? UIImageView) != nil {

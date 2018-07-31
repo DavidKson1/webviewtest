@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YLf-hq-g8Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="88i-wN-fhW">
+            <objects>
+                <viewController id="YLf-hq-g8Z" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ID-ah-zdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TMb-BV-UUo"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="17x-y3-SQS"/>
+                        <segue destination="qlY-B7-hK5" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="E4i-6d-fRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHP-bv-CMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="-164"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="hD8-Bq-t4Q">
+            <objects>
+                <viewController id="qlY-B7-hK5" customClass="MenuViewController" customModule="webviewtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08b-rT-ZvD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e0k-cT-4Gw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKm-Vr-PKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-530"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -60,7 +94,7 @@
                                     <constraint firstItem="s5p-Ku-OVq" firstAttribute="centerY" secondItem="KCq-DV-89Q" secondAttribute="centerY" id="xGp-z3-8lb"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoDD" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-CE-mvF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoDD" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-CE-mvF">
                                 <rect key="frame" x="0.0" y="80" width="375" height="257"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="257" id="V9I-is-SJl"/>
@@ -114,6 +148,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ySR-Tr-io8"/>
                     <connections>
+                        <outlet property="menuBtn" destination="s5p-Ku-OVq" id="4nl-oi-CnX"/>
                         <outlet property="webViewImage" destination="aKq-XD-29a" id="lzX-kR-2DH"/>
                         <segue destination="EXV-i0-aVe" kind="show" identifier="dataDavid" id="nyg-hQ-RPP"/>
                     </connections>
@@ -144,6 +179,9 @@
                                         <state key="normal" title="HOME">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="EXV-i0-aVe" eventType="touchUpInside" id="5ER-93-sUT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14862936739999999" green="0.17452016470000001" blue="0.2137337923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

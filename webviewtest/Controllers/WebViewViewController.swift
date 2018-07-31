@@ -21,4 +21,7 @@ class WebViewViewController: UIViewController {
         webView.load(URLRequest(url: url!))
 
     }
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
