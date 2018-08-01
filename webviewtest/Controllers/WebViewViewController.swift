@@ -13,7 +13,6 @@ class WebViewViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +20,7 @@ class WebViewViewController: UIViewController {
         webView.load(URLRequest(url: url!))
 
     }
+    
     @IBAction func backBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

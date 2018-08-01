@@ -18,6 +18,13 @@
 		E65033CE2111067C0075B640 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65033CD2111067C0075B640 /* WebViewViewController.swift */; };
 		E650B4382111084A00F23888 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E650B4372111084A00F23888 /* WebKit.framework */; };
 		E650B43F21110C4700F23888 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E650B43D21110C4600F23888 /* SWRevealViewController.m */; };
+		E6B33B872111B07400D75CF9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B862111B07400D75CF9 /* AboutUsViewController.swift */; };
+		E6B33B892111B0B800D75CF9 /* GraphicDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B882111B0B800D75CF9 /* GraphicDesignViewController.swift */; };
+		E6B33B8B2111B10D00D75CF9 /* BrochureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B8A2111B10D00D75CF9 /* BrochureViewController.swift */; };
+		E6B33B8D2111B14B00D75CF9 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B8C2111B14B00D75CF9 /* LogoViewController.swift */; };
+		E6B33B8F2111B19800D75CF9 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B8E2111B19800D75CF9 /* WebsiteViewController.swift */; };
+		E6B33B912111B1C700D75CF9 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B902111B1C700D75CF9 /* AppViewController.swift */; };
+		E6B33B932111B1EE00D75CF9 /* MarketingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B922111B1EE00D75CF9 /* MarketingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		E650B43C21110C4600F23888 /* webviewtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "webviewtest-Bridging-Header.h"; sourceTree = "<group>"; };
 		E650B43D21110C4600F23888 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E650B43E21110C4700F23888 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E6B33B862111B07400D75CF9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		E6B33B882111B0B800D75CF9 /* GraphicDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicDesignViewController.swift; sourceTree = "<group>"; };
+		E6B33B8A2111B10D00D75CF9 /* BrochureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrochureViewController.swift; sourceTree = "<group>"; };
+		E6B33B8C2111B14B00D75CF9 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		E6B33B8E2111B19800D75CF9 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
+		E6B33B902111B1C700D75CF9 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		E6B33B922111B1EE00D75CF9 /* MarketingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				E617BB4621111C59008E4F0E /* YourProjectViewController.swift */,
+				E6B33B862111B07400D75CF9 /* AboutUsViewController.swift */,
+				E6B33B882111B0B800D75CF9 /* GraphicDesignViewController.swift */,
+				E6B33B8A2111B10D00D75CF9 /* BrochureViewController.swift */,
+				E6B33B8C2111B14B00D75CF9 /* LogoViewController.swift */,
+				E6B33B8E2111B19800D75CF9 /* WebsiteViewController.swift */,
+				E6B33B902111B1C700D75CF9 /* AppViewController.swift */,
+				E6B33B922111B1EE00D75CF9 /* MarketingViewController.swift */,
 			);
 			path = ListViewControllers;
 			sourceTree = "<group>";
@@ -199,9 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B33B872111B07400D75CF9 /* AboutUsViewController.swift in Sources */,
+				E6B33B932111B1EE00D75CF9 /* MarketingViewController.swift in Sources */,
 				296E3AE92110D0E400369DCF /* ViewController.swift in Sources */,
+				E6B33B912111B1C700D75CF9 /* AppViewController.swift in Sources */,
 				E617BB4721111C59008E4F0E /* YourProjectViewController.swift in Sources */,
+				E6B33B892111B0B800D75CF9 /* GraphicDesignViewController.swift in Sources */,
+				E6B33B8F2111B19800D75CF9 /* WebsiteViewController.swift in Sources */,
+				E6B33B8B2111B10D00D75CF9 /* BrochureViewController.swift in Sources */,
 				E617BB4121110F57008E4F0E /* MenuViewController.swift in Sources */,
+				E6B33B8D2111B14B00D75CF9 /* LogoViewController.swift in Sources */,
 				E65033CE2111067C0075B640 /* WebViewViewController.swift in Sources */,
 				296E3AE72110D0E400369DCF /* AppDelegate.swift in Sources */,
 				E617BB442111196E008E4F0E /* menuTableViewCell.swift in Sources */,
