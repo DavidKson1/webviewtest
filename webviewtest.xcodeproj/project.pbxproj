@@ -25,6 +25,8 @@
 		E6B33B8F2111B19800D75CF9 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B8E2111B19800D75CF9 /* WebsiteViewController.swift */; };
 		E6B33B912111B1C700D75CF9 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B902111B1C700D75CF9 /* AppViewController.swift */; };
 		E6B33B932111B1EE00D75CF9 /* MarketingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B922111B1EE00D75CF9 /* MarketingViewController.swift */; };
+		E6B33B952111C48500D75CF9 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B942111C48500D75CF9 /* PopularViewController.swift */; };
+		E6B33B972111C4B400D75CF9 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B33B962111C4B400D75CF9 /* LiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		E6B33B8E2111B19800D75CF9 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		E6B33B902111B1C700D75CF9 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E6B33B922111B1EE00D75CF9 /* MarketingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingViewController.swift; sourceTree = "<group>"; };
+		E6B33B942111C48500D75CF9 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		E6B33B962111C4B400D75CF9 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 				296E3AE82110D0E400369DCF /* ViewController.swift */,
 				E65033CD2111067C0075B640 /* WebViewViewController.swift */,
 				E617BB4021110F57008E4F0E /* MenuViewController.swift */,
+				E6B33B942111C48500D75CF9 /* PopularViewController.swift */,
+				E6B33B962111C4B400D75CF9 /* LiveViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,10 +228,12 @@
 			files = (
 				E6B33B872111B07400D75CF9 /* AboutUsViewController.swift in Sources */,
 				E6B33B932111B1EE00D75CF9 /* MarketingViewController.swift in Sources */,
+				E6B33B972111C4B400D75CF9 /* LiveViewController.swift in Sources */,
 				296E3AE92110D0E400369DCF /* ViewController.swift in Sources */,
 				E6B33B912111B1C700D75CF9 /* AppViewController.swift in Sources */,
 				E617BB4721111C59008E4F0E /* YourProjectViewController.swift in Sources */,
 				E6B33B892111B0B800D75CF9 /* GraphicDesignViewController.swift in Sources */,
+				E6B33B952111C48500D75CF9 /* PopularViewController.swift in Sources */,
 				E6B33B8F2111B19800D75CF9 /* WebsiteViewController.swift in Sources */,
 				E6B33B8B2111B10D00D75CF9 /* BrochureViewController.swift in Sources */,
 				E617BB4121110F57008E4F0E /* MenuViewController.swift in Sources */,
