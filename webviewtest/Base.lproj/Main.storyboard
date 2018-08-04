@@ -35,14 +35,14 @@
             <objects>
                 <viewController id="h33-UV-T2i" customClass="AboutUsViewController" customModule="webviewtest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k3S-Pl-fxk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDJ-ad-rWG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Om oss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-Mm-5Tc">
-                                        <rect key="frame" x="158" y="47" width="58.5" height="21"/>
+                                        <rect key="frame" x="158" y="47" width="59" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -67,19 +67,179 @@
                                     <constraint firstItem="S7r-Vy-5Mg" firstAttribute="centerY" secondItem="vuj-Mm-5Tc" secondAttribute="centerY" id="ly9-Ac-Lev"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAT-M9-Vv8">
+                                <rect key="frame" x="0.0" y="930" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-AZ-LNE">
+                                        <rect key="frame" x="8" y="16" width="48" height="30"/>
+                                        <state key="normal" title="BAKÅT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-RM-EXx">
+                                        <rect key="frame" x="308" y="16" width="59" height="30"/>
+                                        <state key="normal" title="FRAMÅT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veo-TQ-qDY">
+                                        <rect key="frame" x="162" y="20" width="51" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1535312533" green="0.17600667480000001" blue="0.2117680311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1wZ-5D-rHy"/>
+                                    <constraint firstItem="Shp-AZ-LNE" firstAttribute="centerY" secondItem="veo-TQ-qDY" secondAttribute="centerY" id="4Wg-X8-l2V"/>
+                                    <constraint firstAttribute="trailing" secondItem="JiV-RM-EXx" secondAttribute="trailing" constant="8" id="OLQ-kQ-fw9"/>
+                                    <constraint firstItem="JiV-RM-EXx" firstAttribute="centerY" secondItem="veo-TQ-qDY" secondAttribute="centerY" id="cAA-uL-gUK"/>
+                                    <constraint firstItem="veo-TQ-qDY" firstAttribute="centerX" secondItem="MAT-M9-Vv8" secondAttribute="centerX" id="eHn-bN-xD2"/>
+                                    <constraint firstItem="Shp-AZ-LNE" firstAttribute="leading" secondItem="MAT-M9-Vv8" secondAttribute="leading" constant="8" id="iTL-A6-axS"/>
+                                    <constraint firstItem="veo-TQ-qDY" firstAttribute="top" secondItem="MAT-M9-Vv8" secondAttribute="top" constant="20" id="kmm-uD-IKu"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-yx-1cI">
+                                <rect key="frame" x="0.0" y="80" width="375" height="850"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APPICON" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-WP-QlP">
+                                        <rect key="frame" x="117" y="8" width="141" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="6Ww-VJ-e9H"/>
+                                            <constraint firstAttribute="height" constant="128" id="Elm-dv-lBE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Om Oss Bild1" translatesAutoresizingMaskIntoConstraints="NO" id="Edx-Rd-kmg">
+                                        <rect key="frame" x="16" y="266" width="121" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="QiP-VN-wdB"/>
+                                            <constraint firstAttribute="height" constant="128" id="Xlb-1d-Zf2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Om Oss Bild2" translatesAutoresizingMaskIntoConstraints="NO" id="FKl-91-3ph">
+                                        <rect key="frame" x="246" y="266" width="121" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="KzG-qU-6Th"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Om Oss Cover" translatesAutoresizingMaskIntoConstraints="NO" id="KGG-mA-hiH">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="5V8-l1-dLC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gNJ-0W-kwT">
+                                        <rect key="frame" x="16" y="427" width="343" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">VÅRA AMBITIONER                                                      Vi på DataDavid strävar efter att vara i spetsen inom det mesta kretsar kring data. Oavsett om det är Design, Analyser IT, Marknadsföring m.f.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sitter du på grymma idéer/visioner så tveka inte att höra av dig så ska vi se så att vi kan göra dem verkliga!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-ud-k9I">
+                                        <rect key="frame" x="16" y="506" width="343" height="68"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="C1w-5L-stN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XH5-0W-iLu">
+                                        <rect key="frame" x="16" y="574" width="343" height="83"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="83" id="5y0-5j-c1U"/>
+                                        </constraints>
+                                        <string key="text">SYNS DU?                                                                    Det är extremt viktigt idag att synas, behöver du fler jobb, fler som ska köpa dina produkter/tjänster, börjar då med att synas för rätt målgrupp.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-OI-fyU">
+                                        <rect key="frame" x="16" y="657" width="343" height="68"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="dvH-VS-Mcl"/>
+                                        </constraints>
+                                        <string key="text">Vi på DataDavid sitter på tipsen och tricksen för att DU ska lyckas! Vi hjälper dig från start till mål! Oavsett vad du strävar efter!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Om Oss Bild3" translatesAutoresizingMaskIntoConstraints="NO" id="71t-e0-hrZ">
+                                        <rect key="frame" x="16" y="733" width="92" height="81"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="bLJ-Ih-3UZ"/>
+                                            <constraint firstAttribute="width" constant="92" id="lnR-FA-tbF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EHs-j6-ZoW">
+                                        <rect key="frame" x="16" y="375" width="343" height="51"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="t7A-QZ-ZwW"/>
+                                        </constraints>
+                                        <string key="text">Vi utför professionell hjälp från allt inom data, marknadsföring, design eller programmering.                                                                                                </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KGG-mA-hiH" firstAttribute="top" secondItem="zwY-WP-QlP" secondAttribute="bottom" constant="8" symbolic="YES" id="0OZ-BG-o0e"/>
+                                    <constraint firstItem="XH5-0W-iLu" firstAttribute="leading" secondItem="nUO-OI-fyU" secondAttribute="leading" id="1HC-JV-i09"/>
+                                    <constraint firstItem="EHs-j6-ZoW" firstAttribute="trailing" secondItem="gNJ-0W-kwT" secondAttribute="trailing" id="238-iT-6aT"/>
+                                    <constraint firstItem="Edx-Rd-kmg" firstAttribute="bottom" secondItem="FKl-91-3ph" secondAttribute="bottom" id="3Ws-dM-pxW"/>
+                                    <constraint firstItem="Edx-Rd-kmg" firstAttribute="top" secondItem="FKl-91-3ph" secondAttribute="top" id="5D8-eZ-Woj"/>
+                                    <constraint firstItem="zwY-WP-QlP" firstAttribute="centerX" secondItem="BN8-yx-1cI" secondAttribute="centerX" id="810-Wf-ySE"/>
+                                    <constraint firstAttribute="bottom" secondItem="71t-e0-hrZ" secondAttribute="bottom" constant="36" id="8BQ-6M-FSF"/>
+                                    <constraint firstItem="gNJ-0W-kwT" firstAttribute="trailing" secondItem="1DF-ud-k9I" secondAttribute="trailing" id="9d4-bo-PiT"/>
+                                    <constraint firstAttribute="trailing" secondItem="KGG-mA-hiH" secondAttribute="trailing" id="Awz-BM-KR6"/>
+                                    <constraint firstItem="gNJ-0W-kwT" firstAttribute="top" secondItem="Edx-Rd-kmg" secondAttribute="bottom" constant="33" id="GjT-kP-CxK"/>
+                                    <constraint firstItem="zwY-WP-QlP" firstAttribute="top" secondItem="BN8-yx-1cI" secondAttribute="topMargin" id="HOb-3P-rk0"/>
+                                    <constraint firstItem="EHs-j6-ZoW" firstAttribute="leading" secondItem="gNJ-0W-kwT" secondAttribute="leading" id="KDF-K0-NIy"/>
+                                    <constraint firstItem="71t-e0-hrZ" firstAttribute="top" secondItem="nUO-OI-fyU" secondAttribute="bottom" constant="8" symbolic="YES" id="Mkn-Wp-1KZ"/>
+                                    <constraint firstItem="1DF-ud-k9I" firstAttribute="leading" secondItem="XH5-0W-iLu" secondAttribute="leading" id="MnB-5Q-qIY"/>
+                                    <constraint firstItem="zwY-WP-QlP" firstAttribute="centerX" secondItem="KGG-mA-hiH" secondAttribute="centerX" id="OG0-VC-qhT"/>
+                                    <constraint firstItem="nUO-OI-fyU" firstAttribute="top" secondItem="XH5-0W-iLu" secondAttribute="bottom" id="PRk-yn-hrY"/>
+                                    <constraint firstItem="KGG-mA-hiH" firstAttribute="leading" secondItem="BN8-yx-1cI" secondAttribute="leading" id="PWo-3s-gb0"/>
+                                    <constraint firstItem="XH5-0W-iLu" firstAttribute="top" secondItem="gNJ-0W-kwT" secondAttribute="bottom" constant="67" id="Qwr-C3-0o0"/>
+                                    <constraint firstItem="KGG-mA-hiH" firstAttribute="centerX" secondItem="EHs-j6-ZoW" secondAttribute="centerX" id="RWE-Lu-MWP"/>
+                                    <constraint firstItem="Edx-Rd-kmg" firstAttribute="top" secondItem="BN8-yx-1cI" secondAttribute="top" constant="266" id="WAg-G6-AUd"/>
+                                    <constraint firstItem="gNJ-0W-kwT" firstAttribute="top" secondItem="EHs-j6-ZoW" secondAttribute="bottom" constant="1" id="c10-MQ-eQ7"/>
+                                    <constraint firstItem="1DF-ud-k9I" firstAttribute="trailing" secondItem="XH5-0W-iLu" secondAttribute="trailing" id="ddr-KX-hxP"/>
+                                    <constraint firstItem="gNJ-0W-kwT" firstAttribute="leading" secondItem="1DF-ud-k9I" secondAttribute="leading" id="dsg-rQ-BIf"/>
+                                    <constraint firstItem="FKl-91-3ph" firstAttribute="trailing" secondItem="BN8-yx-1cI" secondAttribute="trailingMargin" id="gSr-bf-WOh"/>
+                                    <constraint firstItem="Edx-Rd-kmg" firstAttribute="leading" secondItem="BN8-yx-1cI" secondAttribute="leading" constant="16" id="gnQ-l9-M7t"/>
+                                    <constraint firstItem="XH5-0W-iLu" firstAttribute="trailing" secondItem="nUO-OI-fyU" secondAttribute="trailing" id="lEf-PQ-PCL"/>
+                                    <constraint firstItem="Edx-Rd-kmg" firstAttribute="leading" secondItem="EHs-j6-ZoW" secondAttribute="leading" id="phO-ej-0Q2"/>
+                                    <constraint firstItem="1DF-ud-k9I" firstAttribute="top" secondItem="EHs-j6-ZoW" secondAttribute="bottom" constant="80" id="pwR-YG-Qnn"/>
+                                    <constraint firstItem="XH5-0W-iLu" firstAttribute="top" secondItem="1DF-ud-k9I" secondAttribute="bottom" id="uKF-L7-rfq"/>
+                                    <constraint firstItem="nUO-OI-fyU" firstAttribute="leading" secondItem="71t-e0-hrZ" secondAttribute="leading" id="zUS-uw-Ao4"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BN8-yx-1cI" firstAttribute="trailing" secondItem="MAT-M9-Vv8" secondAttribute="trailing" id="1xd-Ex-8GS"/>
                             <constraint firstItem="sDJ-ad-rWG" firstAttribute="leading" secondItem="PZT-5I-K0r" secondAttribute="leading" id="87F-tz-alk"/>
+                            <constraint firstItem="MAT-M9-Vv8" firstAttribute="trailing" secondItem="PZT-5I-K0r" secondAttribute="trailing" id="9vl-ka-NJy"/>
                             <constraint firstItem="PZT-5I-K0r" firstAttribute="trailing" secondItem="sDJ-ad-rWG" secondAttribute="trailing" id="E2f-wf-4kb"/>
+                            <constraint firstItem="BN8-yx-1cI" firstAttribute="top" secondItem="sDJ-ad-rWG" secondAttribute="bottom" id="Shp-rY-2NN"/>
+                            <constraint firstItem="BN8-yx-1cI" firstAttribute="leading" secondItem="MAT-M9-Vv8" secondAttribute="leading" id="aJP-an-kGt"/>
                             <constraint firstItem="sDJ-ad-rWG" firstAttribute="top" secondItem="k3S-Pl-fxk" secondAttribute="top" id="bqD-Ah-j6y"/>
+                            <constraint firstAttribute="bottom" secondItem="MAT-M9-Vv8" secondAttribute="bottom" id="cL0-oa-WhG"/>
+                            <constraint firstItem="MAT-M9-Vv8" firstAttribute="leading" secondItem="PZT-5I-K0r" secondAttribute="leading" id="ceW-D1-HHa"/>
+                            <constraint firstItem="MAT-M9-Vv8" firstAttribute="top" secondItem="BN8-yx-1cI" secondAttribute="bottom" id="lFT-wU-13r"/>
+                            <constraint firstItem="BN8-yx-1cI" firstAttribute="trailing" secondItem="PZT-5I-K0r" secondAttribute="trailing" id="qvP-Ev-3dD"/>
+                            <constraint firstItem="BN8-yx-1cI" firstAttribute="leading" secondItem="PZT-5I-K0r" secondAttribute="leading" id="uxq-uw-UEU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PZT-5I-K0r"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Bu-xb-77W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="-1490"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="-1576.0119940029986"/>
         </scene>
         <!--Graphic Design View Controller-->
         <scene sceneID="zDX-HZ-5Zu">
@@ -838,7 +998,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="APPICON" width="1024" height="1024"/>
         <image name="Hemsida NU" width="200" height="206"/>
+        <image name="Om Oss Bild1" width="304" height="385"/>
+        <image name="Om Oss Bild2" width="344" height="588"/>
+        <image name="Om Oss Bild3" width="246" height="266"/>
+        <image name="Om Oss Cover" width="960" height="349"/>
         <image name="hamburgerIcon" width="30" height="30"/>
         <image name="jobb NU" width="200" height="206"/>
         <image name="kontakt NU" width="200" height="206"/>
